@@ -10,4 +10,6 @@ function tieneMayusc(cadena) {
 }
 let texto = prompt("Ingrese texto: ");
 
-tieneMayusc(texto);
+if(isNaN(texto))
+     tieneMayusc(texto);
+else document.write("No se ha ingresado texto");
