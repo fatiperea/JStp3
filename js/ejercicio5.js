@@ -1,16 +1,13 @@
-function tieneMayusc(cadena){
-    let aux = cadena.toUpperCase();
-    document.write(aux);
-    /*if(cadena === aux)
-         document.write("Esta en mayúsculas");
-    else
-         document.write("Esta en minúsculas");*/
-    //if(cadena === cadena.toLowercase()) document.write("Esta en minúsculas");
-
+function tieneMayusc(cadena) {
+  
+  if (cadena === cadena.toUpperCase())
+    document.write("El texto esta en mayúsculas");
+  else if (cadena === cadena.toLowerCase())
+    document.write("El texto esta en minúsculas");
+  else 
+   document.write("El texto contiene mayúsculas y minúsculas");
+  
 }
-let texto=prompt("Ingrese texto: ");
-
-//document.write(texto.toUpperCase());
+let texto = prompt("Ingrese texto: ");
 
 tieneMayusc(texto);
-
